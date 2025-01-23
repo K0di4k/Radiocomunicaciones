@@ -25,10 +25,5 @@ body::before {
     transform: rotate(45deg);
     z-index: -1;
     background-size: 80px; /* Ajusta según el tamaño de tu patrón */
-    animation: moverFondo 40s linear infinite; /* Opcional: Efecto de movimiento */
-}
-
-@keyframes moverFondo {
-    0% { transform: rotate(45deg) translateX(0); }
-    100% { transform: rotate(45deg) translateX(50%); }
+    
 }
