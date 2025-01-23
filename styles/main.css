@@ -1,10 +1,34 @@
-.fixed-span-width {
-    width: 100px;
+.fixed-width {
+    width: 125px;
     /* Ancho deseado */
-    min-width: 100px;
+    min-width: 125px;
     /* Evita que se encoja */
 }
 
-.Span {
-    background-color: rgb(60, 111, 186);
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: -150%;
+    left: -150%;
+    width: 400%;
+    height: 400%;
+    background-image: url('../assets/genchi.png');
+    background-repeat: repeat;
+    opacity: 0.15;
+    transform: rotate(45deg);
+    z-index: -1;
+    background-size: 80px; /* Ajusta según el tamaño de tu patrón */
+    animation: moverFondo 40s linear infinite; /* Opcional: Efecto de movimiento */
+}
+
+@keyframes moverFondo {
+    0% { transform: rotate(45deg) translateX(0); }
+    100% { transform: rotate(45deg) translateX(50%); }
 }
