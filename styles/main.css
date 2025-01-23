@@ -1,8 +1,8 @@
 .fixed-width {
     width: 125px;
-    /* Ancho deseado */
+    
     min-width: 125px;
-    /* Evita que se encoja */
+    
 }
 
 body {
@@ -24,6 +24,6 @@ body::before {
     opacity: 0.15;
     transform: rotate(45deg);
     z-index: -1;
-    background-size: 80px; /* Ajusta según el tamaño de tu patrón */
+    background-size: 80px; 
     
 }
