@@ -1,0 +1,10 @@
+.fixed-span-width {
+    width: 100px;
+    /* Ancho deseado */
+    min-width: 100px;
+    /* Evita que se encoja */
+}
+
+.Span {
+    background-color: rgb(60, 111, 186);
+}
