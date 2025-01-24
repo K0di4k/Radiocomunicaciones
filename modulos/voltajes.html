@@ -1,62 +1,74 @@
-<div class="row justify-content-center mt-2">
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-        <label for="">Voltaje</label>
-        <div class="input-group" style="min-width: 280px;">
-            <input id="voltaje" type="number" class="form-control" placeholder="Ingrese voltaje">
-        </div>
-    </div>
-</div>
-<div class="row justify-content-center mt-2">
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-        <label for="">Corriente</label>
-        <div class="input-group" style="min-width: 280px;">
-            <input id="corriente" type="number" class="form-control" placeholder="Ingrese corriente">
-        </div>
-    </div>
-</div>
-<div class="row justify-content-center mt-2">
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-        <label for="">Resistencia</label>
-        <div class="input-group" style="min-width: 280px;">
-            <input id="resistencia" type="number" class="form-control" placeholder="Ingrese resistencia">
-        </div>
-    </div>
-</div>
-<div class="row justify-content-center mt-2">
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-        <label for="">Potencia</label>
-        <div class="input-group" style="min-width: 280px;">
-            <input id="potencia" type="number" class="form-control" placeholder="Ingrese potencia">
-        </div>
-    </div>
-</div>
+<html lang="en">
 
-<div class="row justify-content-center mt-3">
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-        <div class="d-flex gap-2 justify-content-center">
-            <button type="button" class="btn btn-primary flex-grow-0" onclick="calcular()">Calcular</button>
-            <button type="button" class="btn btn-danger flex-grow-0" onclick="reiniciar()">Reiniciar</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row justify-content-center mt-2">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+            <label for="">Voltaje</label>
+            <div class="input-group" style="min-width: 280px;">
+                <input id="voltaje" type="number" class="form-control" placeholder="Ingrese voltaje">
+            </div>
         </div>
     </div>
-</div>
-<div class="row justify-content-center mt-3">
-    <div class="col-sm-3 col-6 p-0">
-        <div id="resultado" class="text-center">
+    <div class="row justify-content-center mt-2">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+            <label for="">Corriente</label>
+            <div class="input-group" style="min-width: 280px;">
+                <input id="corriente" type="number" class="form-control" placeholder="Ingrese corriente">
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-2">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+            <label for="">Resistencia</label>
+            <div class="input-group" style="min-width: 280px;">
+                <input id="resistencia" type="number" class="form-control" placeholder="Ingrese resistencia">
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-2">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+            <label for="">Potencia</label>
+            <div class="input-group" style="min-width: 280px;">
+                <input id="potencia" type="number" class="form-control" placeholder="Ingrese potencia">
+            </div>
+        </div>
+    </div>
 
-            <div class="d-grid gap-2">
-                <div id="voltaje-result" class="alert alert-info mb-0 py-2 d-none">
-                    Voltaje: <span class="fw-bold">-</span>
-                </div>
-                <div id="corriente-result" class="alert alert-info mb-0 py-2 d-none">
-                    Corriente: <span class="fw-bold">-</span>
-                </div>
-                <div id="resistencia-result" class="alert alert-info mb-0 py-2 d-none">
-                    Resistencia: <span class="fw-bold">-</span>
-                </div>
-                <div id="potencia-result" class="alert alert-info mb-0 py-2 d-none">
-                    Potencia: <span class="fw-bold">-</span>
+    <div class="row justify-content-center mt-3">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+            <div class="d-flex gap-2 justify-content-center">
+                <button type="button" class="btn btn-primary flex-grow-0" onclick="calcular()">Calcular</button>
+                <button type="button" class="btn btn-danger flex-grow-0" onclick="reiniciar()">Reiniciar</button>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-sm-3 col-6 p-0">
+            <div id="resultado" class="text-center">
+
+                <div class="d-grid gap-2">
+                    <div id="voltaje-result" class="alert alert-info mb-0 py-2 d-none">
+                        Voltaje: <span class="fw-bold">-</span>
+                    </div>
+                    <div id="corriente-result" class="alert alert-info mb-0 py-2 d-none">
+                        Corriente: <span class="fw-bold">-</span>
+                    </div>
+                    <div id="resistencia-result" class="alert alert-info mb-0 py-2 d-none">
+                        Resistencia: <span class="fw-bold">-</span>
+                    </div>
+                    <div id="potencia-result" class="alert alert-info mb-0 py-2 d-none">
+                        Potencia: <span class="fw-bold">-</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</body>
+
+</html>
