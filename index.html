@@ -10,71 +10,71 @@
 </head>
 
 <body>
-    <div class="container">
-        
-        <div class="row justify-content-center mt-2">
-            <div class="col-sm-3 col-6 p-0">
-                <div class="input-group"> 
-                    <span class="input-group-text bg-primary text-white ">Voltaje (V)</span>
-                    <input id="voltaje" type="number" class="form-control " placeholder="Ej: 220">
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-2">
-            <div class="col-sm-3 col-6 p-0">
-                <div class="input-group"> 
-                    <span class="input-group-text bg-primary text-white ">Corriente (I)</span>
-                    <input id="corriente" type="number" class="form-control " placeholder="Ej: 2">
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-2">
-            <div class="col-sm-3 col-6 p-0">
-                <div class="input-group"> 
-                    <span class="input-group-text bg-primary text-white ">Resitencia (R)</span>
-                    <input id="resistencia" type="number" class="form-control " placeholder="Ej: 4500">
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-2">
-            <div class="col-sm-3 col-6 p-0">
-                <div class="input-group"> 
-                    <span class="input-group-text bg-primary text-white ">Potencia (P)</span>
-                    <input id="potencia" type="number" class="form-control " placeholder="Ej: 5000">
-                </div>
-            </div>
-        </div>
 
-        <div class="row justify-content-center mt-3">
-            <div class="col-sm-3 col-6 p-0">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                    <button type="button" class="btn btn-primary w-100" onclick="calcular()">Calcular</button>
-                    <button type="button" class="btn btn-danger w-100" onclick="reiniciar()">Reiniciar</button>
-                </div>
+
+    <div class="row justify-content-center mt-2">
+        <div class="col-sm-3 col-6 p-0">
+            <div class="input-group">
+                <span class="input-group-text bg-primary text-white ">Voltaje (V)</span>
+                <input id="voltaje" type="number" class="form-control " placeholder="Ej: 220">
             </div>
         </div>
-        <div class="row justify-content-center mt-3">
-            <div class="col-sm-3 col-6 p-0">
-                <div id="resultado" class="text-center">
+    </div>
+    <div class="row justify-content-center mt-2">
+        <div class="col-sm-3 col-6 p-0">
+            <div class="input-group">
+                <span class="input-group-text bg-primary text-white ">Corriente (I)</span>
+                <input id="corriente" type="number" class="form-control " placeholder="Ej: 2">
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-2">
+        <div class="col-sm-3 col-6 p-0">
+            <div class="input-group">
+                <span class="input-group-text bg-primary text-white ">Resitencia (R)</span>
+                <input id="resistencia" type="number" class="form-control " placeholder="Ej: 4500">
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-2">
+        <div class="col-sm-3 col-6 p-0">
+            <div class="input-group">
+                <span class="input-group-text bg-primary text-white ">Potencia (P)</span>
+                <input id="potencia" type="number" class="form-control " placeholder="Ej: 5000">
+            </div>
+        </div>
+    </div>
 
-                    <div class="d-grid gap-2">
-                        <div id="voltaje-result" class="alert alert-info mb-0 py-2 d-none">
-                            Voltaje: <span class="fw-bold">-</span>
-                        </div>
-                        <div id="corriente-result" class="alert alert-info mb-0 py-2 d-none">
-                            Corriente: <span class="fw-bold">-</span>
-                        </div>
-                        <div id="resistencia-result" class="alert alert-info mb-0 py-2 d-none">
-                            Resistencia: <span class="fw-bold">-</span>
-                        </div>
-                        <div id="potencia-result" class="alert alert-info mb-0 py-2 d-none">
-                            Potencia: <span class="fw-bold">-</span>
-                        </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-sm-3 col-6 p-0">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <button type="button" class="btn btn-primary w-100" onclick="calcular()">Calcular</button>
+                <button type="button" class="btn btn-danger w-100" onclick="reiniciar()">Reiniciar</button>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-sm-3 col-6 p-0">
+            <div id="resultado" class="text-center">
+
+                <div class="d-grid gap-2">
+                    <div id="voltaje-result" class="alert alert-info mb-0 py-2 d-none">
+                        Voltaje: <span class="fw-bold">-</span>
+                    </div>
+                    <div id="corriente-result" class="alert alert-info mb-0 py-2 d-none">
+                        Corriente: <span class="fw-bold">-</span>
+                    </div>
+                    <div id="resistencia-result" class="alert alert-info mb-0 py-2 d-none">
+                        Resistencia: <span class="fw-bold">-</span>
+                    </div>
+                    <div id="potencia-result" class="alert alert-info mb-0 py-2 d-none">
+                        Potencia: <span class="fw-bold">-</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
