@@ -12,7 +12,7 @@ body::before {
     left: -150%;
     width: 400%;
     height: 400%;
-    background-image: url('../genchi.png');
+    background-image: url('./genchi.png');
     background-repeat: repeat;
     opacity: 0.15;
     transform: rotate(45deg);
