@@ -2,7 +2,7 @@ document.getElementById('menu-voltajes').addEventListener('click', function(even
     event.preventDefault(); 
     
     
-    fetch('../modulos/voltajes.html')
+    fetch('./modulos/voltajes.html')
       .then(response => {
         if (!response.ok) {
           throw new Error('Error al cargar el archivo');
