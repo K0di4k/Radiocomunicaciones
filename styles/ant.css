@@ -1,0 +1,66 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#tramosContainer input {
+    margin-bottom: 10px;
+}
+
+.warning {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn-calcular {
+    background-color: #28a745;
+    color: white;
+}
+
+#btn-reiniciar {
+    background-color: #ffc107;
+    color: black;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 4px;
+    display: none;
+}

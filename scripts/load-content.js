@@ -1,18 +1,38 @@
-document.getElementById('menu-voltajes').addEventListener('click', function(event) {
-    event.preventDefault(); 
-    
-    
-    fetch('./modulos/voltajes.html')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Error al cargar el archivo');
-        }
-        return response.text();
-      })
-      .then(html => {
-        document.getElementById('botones').innerHTML = html;
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
+// scripts/load-content.js
+document.addEventListener('DOMContentLoaded', () => {
+  // Función para cargar scripts dinámicamente
+  const loadScript = (url, callback) => {
+      const script = document.createElement('script');
+      script.src = url;
+      script.onload = callback;
+      document.body.appendChild(script);
+  };
+
+  // Cargar Calculadora Eléctrica
+  document.getElementById('menu-voltajes')?.addEventListener('click', () => {
+      fetch('./voltajes.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('botones').innerHTML = html;
+              document.getElementById('antena').innerHTML = '';
+              // Cargar script DESPUÉS de insertar el HTML
+              loadScript('scripts/calcular_elect.js', () => {
+                  console.log('Script eléctrico cargado');
+              });
+          });
   });
+
+  // Cargar Calculadora de Antenas
+  document.getElementById('menu-antena')?.addEventListener('click', () => {
+      fetch('./antena.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('antena').innerHTML = html;
+              document.getElementById('botones').innerHTML = '';
+              // Cargar script DESPUÉS de insertar el HTML
+              loadScript('scripts/antena.js', () => {
+                  console.log('Script de antena cargado');
+              });
+          });
+  });
+});

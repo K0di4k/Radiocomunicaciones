@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Antenas</title>
+    <link rel="stylesheet" href="styles/ant.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Antenas</h1>
+        <form id="antennaForm">
+            <div class="form-group">
+                <label for="frequency">Frecuencia:</label>
+                <select id="frequency">
+                    <option value="144">144 MHz (2m)</option>
+                    <option value="150">150 MHz (VHF)</option>
+                    <option value="160">160 MHz (VHF)</option>
+                    <option value="170">170 MHz (VHF)</option>
+                    <option value="175">175 MHz (VHF)</option>
+                    <option value="180">180 MHz (VHF)</option>
+                    <option value="other">Otra frecuencia</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="customFreqGroup" style="display: none;">
+                <label for="customFrequency">Frecuencia personalizada (MHz):</label>
+                <input type="number" step="0.1" id="customFrequency">
+            </div>
+
+            <div class="form-group">
+                <label for="sections">Número de tramos:</label>
+                <select id="sections">
+                    <option value="1">1 tramo</option>
+                    <option value="2">2 tramos</option>
+                </select>
+            </div>
+
+            <div id="tramosContainer"></div>
+
+            <div class="btn-group">
+                <button type="button" id="btn-calcular">Calcular</button>
+                <button type="button" id="btn-reiniciar">Reiniciar</button>
+            </div>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="scripts/antena.js"></script>
+</body>
+
+</html>

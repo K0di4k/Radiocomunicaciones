@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Eléctrica</title>
+    <link rel="stylesheet" href="styles/volt.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Eléctrica</h1>
+        <form id="electForm">
+            <div class="form-group">
+                <label for="voltaje">Voltaje (V)</label>
+                <input type="number" step="0.1" id="voltaje">
+            </div>
+
+            <div class="form-group">
+                <label for="corriente">Corriente (A)</label>
+                <input type="number" step="0.1" id="corriente">
+            </div>
+
+            <div class="form-group">
+                <label for="resistencia">Resistencia (Ω)</label>
+                <input type="number" step="0.1" id="resistencia">
+            </div>
+
+            <div class="form-group">
+                <label for="potencia">Potencia (W)</label>
+                <input type="number" step="0.1" id="potencia">
+            </div>
+
+            <div class="btn-group">
+                <button type="button" id="btn-calcular">Calcular</button>
+                <button type="button" id="btn-reiniciar">Reiniciar</button>
+            </div>
+        </form>
+
+        <div id="resultado">
+            <div class="d-grid">
+                <div class="alert alert-danger d-none" id="error-result">
+                    <span></span>
+                </div>
+                
+                <div class="result-item d-none" id="voltaje-result">
+                    Voltaje: <span>-</span>
+                </div>
+                
+                <div class="result-item d-none" id="corriente-result">
+                    Corriente: <span>-</span>
+                </div>
+                
+                <div class="result-item d-none" id="resistencia-result">
+                    Resistencia: <span>-</span>
+                </div>
+                
+                <div class="result-item d-none" id="potencia-result">
+                    Potencia: <span>-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/calcular_elect.js"></script>
+</body>
+</html>
