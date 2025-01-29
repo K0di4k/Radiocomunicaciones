@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 20%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #006400;
+    /* Verde oscuro */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    background-color: #8fbc8f;
+    /* Verde pasto */
+    color: #2c6b2f;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) td {
+    background-color: #b5e7a0;
+    /* Verde claro */
+}
+
+tr:hover td {
+    background-color: #7fae7d;
+    /* Verde hierba */
+}
