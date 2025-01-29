@@ -6,8 +6,8 @@ body {
 }
 
 table {
-    width: 20%;
-    margin: 20px auto;
+    width: 10%;
+    margin-left: 100px;
     border-collapse: collapse;
     border: 1px solid #ddd;
 }
@@ -22,9 +22,8 @@ th {
 
 td {
     background-color: #8fbc8f;
-    /* Verde pasto */
     color: #2c6b2f;
-    padding: 10px;
+    
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
