@@ -1,0 +1,47 @@
+
+        /* Asegurar que el navbar y el contenido no se superpongan */
+        body {
+            margin-top: 56px; /* Ajustar según la altura del navbar */
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 80px;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .frame {
+            position: relative;
+            width: 175px;
+            height: 175px;
+            overflow: hidden;
+            border: 5px solid #333;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .frame:hover {
+            transform: scale(1.1);
+        }
+
+        .name {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            text-align: center;
+        }
+ 
