@@ -42,8 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     });
   
-    // Mostrar la galería nuevamente si lo deseas
-    // Por ejemplo, al hacer clic en el enlace de "Inicio"
+   
     document.getElementById('#')?.addEventListener('click', () => {
         if (gallery) gallery.style.display = 'block';
     });
